@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function MovieCard({movie}) {
-    console.log('hi',movie);
+    
     
   return (
     <div key={movie.id} className="movie-card">
