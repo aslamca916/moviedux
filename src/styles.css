@@ -249,3 +249,11 @@ input:checked + .slider:before {
 input:checked + .slider {
   background-color: #FFA100;
 }
+
+.added {
+  background-color: rgb(128, 2, 0);
+}
+
+.removed{
+  background-color: rgb(38, 182, 28);
+}

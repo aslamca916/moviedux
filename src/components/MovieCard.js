@@ -1,7 +1,8 @@
 import React from "react";
 
-export default function MovieCard({movie}) {
-    
+
+export default function MovieCard({movie, toggleWatchlist,isWatchlisted}) {
+  console.log('movieid',movie.id)
     
   return (
     <div key={movie.id} className="movie-card">
@@ -13,6 +14,21 @@ export default function MovieCard({movie}) {
     <div className="movie-card">
       <h3 className="movie-card-title">{movie.title}</h3>
     </div>
+    <label className="switch">
+          <input
+            type="checkbox"
+            checked={isWatchlisted}
+            onChange={() => toggleWatchlist(movie.id)}
+            
+          ></input>
+
+          <span className="slider">
+            <span className="slider-label">
+             
+              {isWatchlisted ? "In Watchlist" : "Add to Watchlist"}
+            </span>
+          </span>
+        </label>
     </div>
   );
 }
