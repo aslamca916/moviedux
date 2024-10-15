@@ -2,7 +2,7 @@ import React from "react";
 
 
 export default function MovieCard({movie, toggleWatchlist,isWatchlisted}) {
-  console.log('movieid',movie.id)
+  
     
   return (
     <div key={movie.id} className="movie-card">
