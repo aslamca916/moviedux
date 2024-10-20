@@ -257,3 +257,13 @@ input:checked + .slider {
 .removed{
   background-color: rgb(38, 182, 28);
 }
+
+.good {
+  color: green;
+}
+.average {
+  color:#FFA100
+}
+.bad{
+  color: red;
+}
